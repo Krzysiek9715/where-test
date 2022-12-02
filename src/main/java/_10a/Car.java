@@ -1,13 +1,27 @@
 package _10a;
 
 import jakarta.persistence.*;
+import org.hibernate.annotations.Filter;
+import org.hibernate.annotations.FilterDef;
+import org.hibernate.annotations.ParamDef;
 import org.hibernate.annotations.Where;
 
 import java.sql.Date;
 
 @Entity
 @Table(name = "CARS")
-@Where(clause = "DATE_OF_DELETE IS NULL AND AVAILABLE=TRUE")
+@Where(clause = "AVAILABLE=TRUE")
+//@FilterDef(
+//        name = "activeCar",
+//        parameters = @ParamDef(
+//                name = "available",
+//                type = Boolean.class
+//        )
+//)
+//@Filter(
+//        name = "activeCar",
+//        condition = "AVAILABLE =:available"
+//)
 public class Car {
 
     @Id

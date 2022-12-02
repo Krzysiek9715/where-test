@@ -9,6 +9,7 @@ import jakarta.persistence.criteria.CriteriaBuilder;
 import jakarta.persistence.criteria.CriteriaQuery;
 import jakarta.persistence.criteria.Predicate;
 import jakarta.persistence.criteria.Root;
+import org.hibernate.Session;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -27,8 +28,11 @@ public class CarController {
         CriteriaBuilder criteriaBuilder = entityManager.getCriteriaBuilder();
         CriteriaQuery<Car> criteriaQuery = criteriaBuilder.createQuery(Car.class);
         Root<Car> carRoot = criteriaQuery.from(Car.class);
-        criteriaBuilder.isTrue(carRoot.get(Car_.available);
-        return entityManager.createQuery(criteriaQuery.select(carRoot).where())).getResultList();
+//        entityManager.unwrap(Session.class)
+//                .enableFilter("activeCar")
+//                .setParameter("available",true);
+
+        return entityManager.createQuery(criteriaQuery.select(carRoot)).getResultList();
     }
 
     public Car findById(Long id) {
