@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:jsf="http://xmlns.jcp.org/jsf"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<head jsf:id="carConfiguratorHead">
+    <title>Suzuki Car Configurator</title>
+    <meta name="description" content="Suzuki Car Configurator"/>
+    <meta name="keywords" content="Suzuki Car Configurator"/>
+    <link rel="stylesheet" href="resources/css/bootstrap.css"/>
+</head>
+
+<body jsf:id="carConfiguratorBody" class="bg-danger">
+<div jsf:id="carConfiguratorContainer" class="container-fluid">
+    <div class="row p-3 m-3 justify-content-center">
+        <p class="h1 text-center"><strong>SUZUKI</strong></p>
+    </div>
+    <div jsf:id="containerLogin" class="container w-50 h-50 bg-light border">
+        <div jsf:id="loginHeader" class="row p-5 m-3">
+            <p class="h2 text-center p-3"><strong>Logowanie</strong></p>
+            <form jsf:id="loginForm" jsf:prependId="false">
+                <div class="mb-3 text-center">
+                    <label for="formLogin" class="form-label">Login</label>
+                    <input type="text" class="form-control" id="formLogin" placeholder="Username"/>
+                </div>
+                <div class="mb-3 text-center">
+                    <label for="formPassword" class="form-label ">Password</label>
+                    <input type="password" class="form-control" id="formPassword" placeholder="Password"/>
+                </div>
+                <div jsf:id="submitButton" class="d-grid gap-1 col-6 mx-auto m-2 p-2">
+                    <button type="button" class="btn btn-success justify-content-center">ZALOGUJ SIĘ</button>
+                </div>
+                <div jsf:id="passwordReminder" class="d-grid gap-1 col-6 mx-auto">
+                    <a href="#" class="link text-center">Nie pamiętam hasła</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous">
+</script>
+<script src="resources/js/bootstrap.js"/>
+</body>
+
+</html>
+

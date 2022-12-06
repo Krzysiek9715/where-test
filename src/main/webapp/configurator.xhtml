@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:jsf="http://xmlns.jcp.org/jsf"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<head jsf:id="carConfiguratorHead">
+    <title>Suzuki Car Configurator</title>
+    <meta name="description" content="Suzuki Car Configurator"/>
+    <meta name="keywords" content="Suzuki Car Configurator"/>
+    <link rel="stylesheet" href="resources/css/bootstrap.css"/>
+</head>
+
+<body jsf:id="carConfiguratorBody">
+
+<nav id="navbar" class="navbar bg-white fixed-top justify-content-center px-3 mb-3">
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a class="nav-link " href="#model">Model</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#engine">Napęd</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#equipment">Wyposażenie</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#carBody">Nadwozie</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#wheels">Felgi</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#interior">Wnętrze</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#accesories">Akcesoria</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#serviceCare">Przedłużona gwarancja</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#insurance">Zakup</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#mySuzuki">Moje Suzuki</a>
+        </li>
+    </ul>
+</nav>
+<div jsf:id="divBody" class="container-fluid bg-white">
+    <div jsf:id="divBodyRow" class="row">
+        <div data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%"
+             data-bs-smooth-scroll="true"
+             class="scrollspy-example p-3 rounded-2" tabindex="0">
+            <br/>
+            <br/>
+            <div jsf:id="modelContainerBg" class="container-fluid bg-light p-5">
+                <div jsf:id="modelContainerSection" class="container start-10">
+                    <div jsf:id="modelRow" class="row w-65">
+                        <section jsf:id="modelSection">
+                            <p jsf:id="modelHeader" class="h2"><strong>Świeża odsłona kultowego modelu</strong></p>
+                            <p>SWIFT HYBRID to odświeżona wersja kultowego miejskiego modelu, który łączy wyjątkowy styl z przyjemnością prowadzenia. Samochód zachwyca bryłą nadwozia i bogactwem rozwiązań technicznych dostępnych w standardowym wyposażeniu. Innowacyjny napęd typu "mild hybrid" obejmuje silnik benzynowy 1.2 DUALJET (K12D), zintegrowany starter/generator ISG oraz akumulator litowo-jonowy (12V). Komfortowa kabina w sportowym stylu oraz duży bagażnik (265 litrów pojemności) podnoszą walory użytkowe tego samochodu. I co najważniejsze: Swift wciąż pozostaje niedoścignionym wzorem w zakresie bezpieczeństwa, niskich kosztów eksploatacji i bezawaryjności.</p>
+                            <p>ZDJĘCIA, CZY W KARUZELI</p>
+                            <p>https://getbootstrap.com/docs/5.0/components/carousel/</p>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <div jsf:id="engineContainerBg" class="container-fluid bg-white p-5">
+                <div jsf:id="engineContainerSection" class="container start-10">
+                    <div jsf:id="engineRow" class="row w-65">
+                        <section jsf:id="engineSection">
+                            <p class="h2"><strong>Układ "mild hybrid" na pokładzie</strong></p>
+                            <p>SWIFT HYBRID skrywa pod maską silnik benzynowy 1.2 DualJet wspomagany przez układ "mild hybrid" 12V SHVS, w skład którego wchodzi zintegrowany starter/generator ISG wspomagający silnik własnym momentem obrotowym (do 50 Nm) oraz akumulator litowo-jonowy (12V) o zwiększonej pojemności 10 Ah. Inteligentne zarządzanie energią elektryczną w samochodzie wraz z odzyskiem energii kinetycznej umożliwia efektywne wsparcie pracy silnika benzynowego przez ISG, a tym samym obniżenie zużycia paliwa i emisji CO2. Precyzyjnie zestrojona 5-stopniowa manualna skrzynia biegów zapewnia komfortowe i precyzyjne wybieranie przełożeń.</p>
+                            <div jsf:id="engineTest" class="container border rounded-2">
+                                <div jsf:id="row1" class="row">
+                                    <div jsf:id="col1" class="col m-3 bg-light rounded-5 text-center text-danger">
+                                        <strong>Silnik</strong>
+                                    </div>
+                                    <div jsf:id="col2" class="col m-3 bg-light rounded-5 text-center text-danger">
+                                        <strong>Przeniesienie napędu</strong>
+                                    </div>
+                                    <div jsf:id="col3" class="col m-3 bg-light rounded-5 text-center text-danger">
+                                        <strong>Skrzynia biegów</strong>
+                                    </div>
+                                </div>
+                                <div jsf:id="row2" class="row">
+                                    <div jsf:id="col4" class="col m-3 ">
+                                        <form jsf:id="formEngineCheck" jsf:prependId="false">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="engineCheck"/>
+                                                <label class="form-check-label" for="engineCheck">
+                                                    <strong>1.2 DualJet</strong><br/>
+                                                    Benzyna
+                                                </label>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div jsf:id="col5" class="col m-3">
+                                        <form jsf:id="formDrivetrainCheck" jsf:prependId="false">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="drivetrainCheck"/>
+                                                <label class="form-check-label" for="drivetrainCheck">
+                                                    <strong>2WD</strong><br/>
+                                                </label>
+                                            </div>
+                                        </form>
+
+                                    </div>
+                                    <div jsf:id="col6" class="col">
+                                        <form jsf:id="formTransmissionCheck" jsf:prependId="false">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="transmissionCheck1"/>
+                                                <label class="form-check-label" for="transmissionCheck1">
+                                                    <strong>5MT</strong><br/>
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="transmissionCheck2"/>
+                                                <label class="form-check-label" for="transmissionCheck2">
+                                                    <strong>CVT</strong><br/>
+                                                </label>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mt-3 p-1 text-danger text-center bg-light rounded-2 w-25">
+                                <strong>od 65 900,00 </strong>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <div jsf:id="equipmentContainerBg" class="container-fluid bg-light p-5">
+                <div jsf:id="equipmentContainerSection" class="container start-10">
+                    <div jsf:id="equipmentRow" class="row w-65">
+                        <section jsf:id="equipmentSection">
+                            <p class="h2 mb=5" id="equipment"><strong>Wyposażenie</strong></p>
+                            <p>SWIFT HYBRID jest oferowany w trzech wersjach wyposażenia. Już podstawowa wersja Premium oferuje reflektory LED (dla świateł mijania i drogowych), funkcję automatycznego włączania świateł, tylne lampy zespolone LED, układ Radar Brake Support (RBS) oraz adaptacyjny tempomat (ACC). Wyższe wersje wyposażenia zawierają elementy, takie jak Dual Sensor Brake Support (DSBS) z kamerą monoskopową i czujnikiem laserowym, asystent świateł drogowych (HBA), połączenie smartfona z interaktywnym zestawem multimedialnym samochodu, tylne czujniki parkowania. Przestronna kabina w sportowym stylu zapewnia doskonałe samopoczucie nawet podczas długich podróży. Pojemny bagażnik (265 litrów) wraz z dzieloną tylną kanapą (60:40) umożliwia elastyczną konfigurację kabiny.</p>
+
+                            <p class="h5"><strong>Wersje wyposażenia: </strong></p>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <div jsf:id="carBodyContainerBg" class="container-fluid bg-white p-5">
+                <div jsf:id="carBodyContainerSection" class="container start-10">
+                    <div jsf:id="carBodyRow" class="row w-65">
+                        <section jsf:id="carBodySection">
+                            <h4 id="carBody">Nadwozie</h4>
+                            <p>...</p>
+                            <p>SWIFT HYBRID jest dostępny w szerokiej palecie kolorystycznej. Oferta obejmuje 7 kolorów jednolitych (typu monotone), z których kolorem podstawowym bez dopłaty jest czerwony Fervent Red (ZNB). Kolejne 4 kolory to zupełnie nowe kombinacje dwukolorowe (typu 2-tone), w których kolor podstawowy nadwozia jest uzupełniony o dach lakierowany w kolorze srebrnym (ZNC) lub czarnym (ZMV).
+                                Uwaga: dostępność oraz termin dostaw poszczególnych kolorów nadwozia mogą być ograniczone. Skontaktuj się z Dealerem Suzuki w celu potwierdzenia dostępności wybranego koloru.</p>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <div jsf:id="wheelsContainerBg" class="container-fluid bg-light p-5">
+                <div jsf:id="wheelsContainerSection" class="container start-10">
+                    <div jsf:id="wheelsRow" class="row w-65">
+                        <section jsf:id="wheelsSection">
+                            <h4 id="wheels">Felgi</h4>
+                            <p>...</p>
+                            <p>...</p>
+                            <p>...</p>
+                            <p>...</p>
+                            <p>...</p>
+                            <p>Felgi standardowe oferowane w wybranej wersji wyposażenia stanowią interesujące dopełnienie stylizacji nadwozia modelu. Opcjonalnie można wybrać dodatkowy komplet felg akcesoryjnych.</p>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <div jsf:id="interiorContainerBg" class="container-fluid bg-white p-5">
+                <div jsf:id="interiorContainerSection" class="container start-10">
+                    <div jsf:id="interiorRow" class="row w-65">
+                        <section jsf:id="interiorSection">
+                            <h4 id="interior">Wnętrze</h4>
+                            <p>...</p>
+                            <p>...</p>
+                            <p>...</p>
+                            <p>...</p>
+                            <p>...</p>
+                            <p>...</p>
+                            <p>Wnętrze kabiny pasażerskiej oraz tapicerka foteli w wybranej wersji wyposażenia są przedstawione na poniższych zdjęciach poglądowych.
+                                Uwaga: zdjęcia przykładowe, mogą również zawierać elementy występujące w wybranej wersji wyposażenia, ale dla odmiennej konfiguracji napędu i/lub skrzyni biegów.</p>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <div jsf:id="accesoriesContainerBg" class="container-fluid bg-light p-5">
+                <div jsf:id="accesoriessContainerSection" class="container start-10">
+                    <div jsf:id="accesoriesRow" class="row w-65">
+                        <section jsf:id="accesoriesSection">
+                            <h4 id="accesories">Akcesoria</h4>
+                            <p>...</p>
+                            <p>...</p>
+                            <p>...</p>
+                            <p>...</p>
+                            <p>...</p>
+                            <p>Twój hybrydowy Swift może być jeszcze bardziej wyjątkowy
+                                Indywidualną stylizację samochodu zapewnia szeroki wybór akcesoriów Suzuki. Dodatkowe elementy wyposażenia są nie tylko ładne, ale również praktyczne. Każdy Dealer Suzuki służy radą i pomocą w zakresie właściwego doboru akcesoriów.
+                                * Wiele elementów akcesoryjnych wymaga montażu oraz ew. czynności dodatkowych (np. lakierowanie w kolorze nadwozia). Skontaktuj się z Dealerem Suzuki w celu dokładnej wyceny kosztów montażu.</p>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <div jsf:id="serviceCareContainerBg" class="container-fluid bg-white p-5">
+                <div jsf:id="serviceCareContainerSection" class="container start-10">
+                    <div jsf:id="serviceCareRow" class="row w-65">
+                        <section jsf:id="serviceCareSection">
+                            <h4 id="serviceCare">Przedłużona gwarancja</h4>
+                            <p>...</p>
+                            <p>...</p>
+                            <p>...</p>
+                            <p>...</p>
+                            <p>...</p>
+                            <p>Przedłużona gwarancja (ubezpieczenie kosztów napraw) na 4 i 5 rok eksploatacji pojazdu </p>
+                            <p>Program Suzuki Service Care 3+2 to kompleksowa ochrona serwisowa samochodu po 3-letnim okresie gwarancji podstawowej producenta w formie ubezpieczenia kosztów napraw. Program oferuje możliwość przedłużenia ochrony na okres do 24 miesięcy po zakończeniu gwarancji.
+                                <br/>
+                                Partnerem w ramach programu Suzuki Service Care 3+2 jest WAGAS S.A.</p>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <div jsf:id="insuranceContainerBg" class="container-fluid bg-light p-5">
+                <div jsf:id="insuranceContainerSection" class="container start-10">
+                    <div jsf:id="insuranceRow" class="row w-65">
+                        <section jsf:id="insuranceSection">
+                            <h4 id="insurance">Zakup</h4>
+                            <p>...</p>
+                            <p>...</p>
+                            <p>...</p>
+                            <p>...</p>
+                            <p>...</p>
+                            <p class="h3">Pakiet ubezpieczeniowy OC/AC/NNW</p>
+                            <p>Ubezpieczycielem w ramach programu Suzuki Insurance jest TUiR Allianz Polska S.A. oraz PZU S.A. (do wyboru w zależności od modelu).</p>
+                            <p>Allianz
+                                Pakiet ubezpieczeniowy OC/AC/NNW na 1 rok</p>
+                            <p>PZU
+                                Pakiet ubezpieczeniowy OC/AC/NNW na 1 rok</p>
+                            <p class="h3">Finansowanie zakupu pojazdu</p>
+                            <p>Program Suzuki Finance jest realizowany jest we współpracy z Santander Consumer Bank S.A. (kredyt) i Santander Consumer Multirent Sp. z o.o. (leasing) z siedzibą we Wrocławiu</p>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <div jsf:id="mySuzukiContainerBg" class="container-fluid bg-white p-5">
+                <div jsf:id="mySuzukiContainerSection" class="container start-10">
+                    <div jsf:id="mySuzukiRow" class="row w-65">
+                        <section jsf:id="mySuzukiSection">
+                            <h4 id="mySuzuki">Moje Suzuki</h4>
+                            <p>...</p>
+                            <p>...</p>
+                            <p>...</p>
+                            <p>...</p>
+                            <p>...</p>
+                            <p class="h3">Podsumowanie</p>
+                            <p class="h3">Dane Techniczne</p>
+                            <p class="h3">Wymiary</p>
+                            <p class="h3">Wyposażenie standardowe </p>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section jsf:id="summary" class="col-4 position-fixed end-0 top-20">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button h3" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Moje Suzuki
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                         data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Swift 1.2 DualJet 2WD 5MT Premium (rocznik 2022) <br/>
+                            Samochód:
+                            65 900,00 zł, brutto
+                            <br/>
+                            Lakier zwykły (ZNB):
+                            0,00
+                            <br/>
+                            Cena końcowa:
+                            65 900,00
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous">
+</script>
+<script src="resources/js/bootstrap.js"/>
+</body>
+
+</html>
